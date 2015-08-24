@@ -17,12 +17,6 @@ var initClick = function() {
 };
 
 
-// TODO: when user clicks a button,
-// handle the click event with a function
-// that turns the textarea's contents into
-// the 2 variables above, so other functionality
-// can rely on those 2 variables existing.
-
 // when given a string and a list, returns
 // number of occurrences of word in list:
 //   countWord( "america",["america"]);
