@@ -1,5 +1,5 @@
 body {
-  background-image: url("http://i.telegraph.co.uk/multimedia/archive/02014/mountains-13_2014082i.jpg");
+  background-image: url("http://img14.deviantart.net/59c4/i/2011/097/e/b/dark_mountains_by_critical_error-d3denuz.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -10,14 +10,23 @@ body {
   top: 25%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
-.header li  {
+.header li {
   display: inline;
-  padding-left: 10%;
+  padding-left: 9%;
 }
 
-.content {
+.header a {
+  color: white;
+}
 
+.container h1 {
+  color: #FF99CC;
+  padding-left: 1%;
+}
+
+.submit-btn {
+  padding-top: 2px;
 }

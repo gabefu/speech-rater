@@ -6,16 +6,35 @@ var data = {
   text:"",
   words:[]
 }
-var initClick = function() {
+
+// turns text into an array... disabled $('document').ready(initClick)
+
+//var initClick = function() {
+//  $('button').click(function() {
+//    data.text = $('textarea').val();
+//    data.words = $('textarea').val();
+//    data.words = data.words.replace(/\n/g, " ");
+//    data.words = data.words.split(" ");
+//    console.log(data.words);
+//  });
+//};
+
+var initClickalt = function() {
   $('button').click(function() {
-    data.text = $('textarea').val();
-    data.words = $('textarea').val();
-    data.words = data.words.replace(/\n/g, " ");
-    data.words = data.words.split(" ");
-    console.log(data.words);
+    var currentText = $('textarea').val();
+    var americaCount = currentText.split("america").length -1;
+    var americaCaps = currentText.split("America").length -1;
+    var totAmericas = americaCount + americaCaps;
+    if (totAmericas > 2) {
+      alert("u is real patriot")
+    } else {
+      alert("I dont even know what country u in dawg!")
+    }
+    if (currentText.length > 140) {
+      alert("...and you long-winded bro!")
+    }
   });
 };
-
 
 // when given a string and a list, returns
 // number of occurrences of word in list:
@@ -36,4 +55,5 @@ var rate_patriotism = function(){
   }
 }
 
-$('document').ready(initClick);
+//$('document').ready(initClick);
+$('document').ready(initClickalt);
